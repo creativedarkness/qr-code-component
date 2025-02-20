@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Outfit';
+    src: local('Outfit'),
+    url('assets/fonts/Outfit-VariableFont_wght.ttf');
+    font-weight: 400;
+}
+
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(212, 45%, 89%);
+  --clr-neutral-500: hsl(216, 15%, 48%);
+  --clr-neutral-900: hsl(218, 44%, 22%);
+
+  --ff-base: Outfit, sans-serif;
+
+  --fs-base: 15px;
+
+  --ff-regular: 400;
+  --ff-bold: 700;
+
+  --fs-300: .825rem;
+  --fs-400: 1rem;
+  --fs-800: 1.5rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  max-width:100%;
+  display: block;
+  border-radius: .5rem;
+}
+
+body {
+  font-size: var(--ff-base);
+  background-color: var(--clr-neutral-300);
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: var(--clr-neutral-100);
+  width: 350px;
+  border-radius: .75rem;
+  padding: 1rem;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+.title {
+  font-size:var(--fs-800);
+  font-weight: var(--ff-bold);
+  padding: .5rem;
+}
+
+.subtitle {
+  font-size: var(--fs-300);
+  color: var(--clr-neutral-500);
+  padding: .5rem;
+}
+
+.attribution {
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
