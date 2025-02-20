@@ -53,12 +53,14 @@ img {
 body {
   font-size: var(--ff-base);
   background-color: var(--clr-neutral-300);
+  align-items: center;
 }
 
 .grid-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .content {
